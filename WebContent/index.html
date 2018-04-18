@@ -43,6 +43,9 @@
 	width: 200px;
 	margin-bottom : 15px;
 }
+input::-webkit-input-placeholder {
+color: black !important;
+}
 </style>
 
 </head>
@@ -60,10 +63,16 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="row" ng-show="!rollbackflag && !deployflag">
+		<!--<div class="row" ng-show="!rollbackflag && !deployflag">
 			<div class="col-md-6 col-md-offset-4">
 			<img ng-src="images/jenkins_logo.png" height="256" width="185">
 			<img ng-src="images/OpenShift-Logo.png" height="256" width="185">
+			</div>
+		</div>-->
+		<div class="row" ng-show="!rollbackflag && !deployflag"><br><br><br><br><br>
+			<div class="col-md-6 col-md-offset-4">
+			<img ng-src="images/telstra_logo.png">
+			<img ng-src="images/unconference.jpg">
 			</div>
 		</div>
 		<div class="container">
@@ -144,6 +153,7 @@
     </thead></table>
 							<ul id="sortable1" class="connectedSortable" style="cursor: move;">
 								<li style="background-color: #66e0ff; text-align: center;">junit</li>
+								<li style="background-color: #66e0ff; text-align: center;">buildimage</li>
 								<li style="background-color: #66e0ff; text-align: center;">Integration_Testing</li>
 								<li style="background-color: #66e0ff; text-align: center;">jira</li>
 								<li style="background-color: #66e0ff; text-align: center;" class="ui-state-disabled">nexus</li>

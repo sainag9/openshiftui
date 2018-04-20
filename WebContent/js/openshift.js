@@ -48,7 +48,7 @@ mainApp
 							window.URL.revokeObjectURL(url1);
 						}
 
-						/*if ($scope.yamlfiles) {
+						
 							var blob1 = new Blob([ $scope.yamlfile ], {
 								type : 'octet-stream'
 							});
@@ -70,7 +70,7 @@ mainApp
 								// see FileSaver.js
 								saveAs(content, "yamlfiles.zip");
 							});
-						}*/
+						
 
 					}
 					$scope.preview = function() {
